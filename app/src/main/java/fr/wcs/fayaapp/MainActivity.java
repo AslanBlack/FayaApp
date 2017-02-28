@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                if (name.length() > 0) {
+                if (name.length()  > 0 && firstname.length() > 0){
                     congrats.setVisibility(View.VISIBLE);
                 }
 
