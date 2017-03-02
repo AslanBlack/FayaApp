@@ -6,6 +6,8 @@
     <string name="welcomeMsg">Bienvenue à la Wild Code School</string>
     <string name="button">Valider</string>
     <string name="congrats">Félicitation ! Tu es désormais un Wilder !</string>
+    <string name="error">Tu dois entrer ton nom ET ton prénom</string>
+
 
 
 

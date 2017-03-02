@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         validate.setOnClickListener(new View.OnClickListener() {
             Context context = getApplicationContext();
-            CharSequence text = "Tu dois entrer ton nom ET ton prénom";
+            CharSequence text = getString(R.string.error);
             int duration = Toast.LENGTH_SHORT;
 
             Toast toast = Toast.makeText(context, text, duration);
