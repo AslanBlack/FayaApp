@@ -1,6 +1,7 @@
 package fr.wcs.fayaapp;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,10 +22,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
         congrats.setVisibility(View.INVISIBLE);
         name.setEnabled(false);
         firstname.setEnabled(false);
+
+
+
 
        checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
            @Override
@@ -65,8 +65,13 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
+
+                String success = ( getString(R.string.congrats) + " " + firstname.getText() + " " + name.getText());
+
+
                 if (name.length()  > 0 && firstname.length() > 0){
                     congrats.setVisibility(View.VISIBLE);
+                    congrats.setText(success);
                 }
 
              else {
